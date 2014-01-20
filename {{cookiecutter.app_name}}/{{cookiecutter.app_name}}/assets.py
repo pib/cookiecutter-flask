@@ -9,7 +9,7 @@ css = Bundle(
 )
 
 js = Bundle(
-    "libs/jquery2/jquery-2.0.3.min.js",
+    "libs/jquery/jquery-1.10.2.min.js",
     "libs/bootstrap3/js/bootstrap.min.js",
     "js/plugins.js",
     Bundle(
