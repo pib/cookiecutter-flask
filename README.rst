@@ -10,7 +10,7 @@ Use it now
 ::
 
     $ pip install cookiecutter
-    $ cookiecutter https://github.com/sloria/cookiecutter-flask.git
+    $ cookiecutter https://github.com/pib/cookiecutter-flask-foundation.git
 
 You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
 
@@ -34,12 +34,12 @@ Features
 Screenshots
 -----------
 
-.. image:: https://dl.dropboxusercontent.com/u/1693233/github/cookiecutter-flask-01.png
-    :target: https://dl.dropboxusercontent.com/u/1693233/github/cookiecutter-flask-01.png
+.. image:: https://www.dropbox.com/s/g00m8imtvg8kp9f/flask-cookiecutter.png
+    :target: https://www.dropbox.com/s/g00m8imtvg8kp9f/flask-cookiecutter.png
     :alt: Home page
 
-.. image:: https://dl.dropboxusercontent.com/u/1693233/github/cookiecutter-flask-02.png.png
-    :target: https://dl.dropboxusercontent.com/u/1693233/github/cookiecutter-flask-02.png.png
+.. image:: https://www.dropbox.com/s/nkfhktqdutejhkl/flask-cookiecutter-register.png
+    :target: https://www.dropbox.com/s/nkfhktqdutejhkl/flask-cookiecutter-register.png
     :alt: Registration form
 
 
