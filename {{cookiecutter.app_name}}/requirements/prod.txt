@@ -26,6 +26,7 @@ wsgiref>=0.1.2
 Flask-Assets>=0.8
 cssmin>=0.1.4
 jsmin>=2.0.4
+pyScss>=1.2.0
 
 # Auth
 Flask-Login>=0.2.7

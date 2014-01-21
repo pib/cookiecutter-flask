@@ -2,24 +2,45 @@
 from flask.ext.assets import Bundle, Environment
 
 css = Bundle(
-    "libs/bootstrap3/css/bootstrap.min.css",
-    "css/style.css",
-    filters="cssmin",
+    "css/style.scss",
+    filters="pyscss",
     output="public/css/common.css"
+)
+
+js_top = Bundle(
+    "libs/modernizr/modernizr.js",
 )
 
 js = Bundle(
     "libs/jquery/jquery-1.10.2.min.js",
-    "libs/bootstrap3/js/bootstrap.min.js",
+    "libs/fastclick/fastclick.js",
+    "libs/fastclick/placeholder.js",
+
+    # Foundation components, those which aren't used can be removed
+    "libs/foundation5/js/foundation/foundation.js",
+    "libs/foundation5/js/foundation/foundation.abide.js",
+    "libs/foundation5/js/foundation/foundation.accordion.js",
+    "libs/foundation5/js/foundation/foundation.alert.js",
+    "libs/foundation5/js/foundation/foundation.clearing.js",
+    "libs/foundation5/js/foundation/foundation.dropdown.js",
+    "libs/foundation5/js/foundation/foundation.interchange.js",
+    "libs/foundation5/js/foundation/foundation.joyride.js",
+    "libs/foundation5/js/foundation/foundation.magellan.js",
+    "libs/foundation5/js/foundation/foundation.offcanvas.js",
+    "libs/foundation5/js/foundation/foundation.orbit.js",
+    "libs/foundation5/js/foundation/foundation.reveal.js",
+    "libs/foundation5/js/foundation/foundation.tab.js",
+    "libs/foundation5/js/foundation/foundation.tooltip.js",
+    "libs/foundation5/js/foundation/foundation.topbar.js",
+
     "js/plugins.js",
-    Bundle(
-        "js/script.js",
-        filters="jsmin"
-    ),
-    output="public/js/common.js"
+    "js/script.js",
+    filters="jsmin",
+    output="public/js/common.js",
 )
 
 assets = Environment()
 
-assets.register("js_all", js)
+assets.register("js_top", js_top)
+assets.register("js_bottom", js)
 assets.register("css_all", css)

@@ -27,6 +27,13 @@
 
   {% block css %}{% endblock %}
 
+  <!-- JavaScript that needs to be at the top -->
+  {% assets "js_top" %}
+      <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+  {% endassets %}
+  {% block js_top %}{% endblock %}
+  <!-- end scripts -->
+
 </head>
 <body class="{% block body_class %}{% endblock %}">
 {% block body %}
@@ -35,33 +42,29 @@
 {% endwith %}
 
 <header>{% block header %}{% endblock %}</header>
-<div class="{% block content_class %}container{% endblock content_class %}">
+<div role="main">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  <div class="row">
+    <div class="large-12">
+      {% for category, message in messages %}
+      <div data-alert class="alert-box {{ category }} radius">
+        <a class="close" title="Close" href="#">&times;</a>
+       {{message}}
+      </div><!-- end .alert-box -->
+      {% endfor %}
+    </div><!-- end col-md -->
+  </div><!-- end row -->
+      {% endif %}
+  {% endwith %}
 
-  <div role="main">
-    {% with messages = get_flashed_messages(with_categories=true) %}
-    {% if messages %}
-    <div class="row">
-      <div class="col-md-12">
-        {% for category, message in messages %}
-        <div class="alert alert-{{ category }}">
-          <a class="close" title="Close" href="#" data-dismiss="alert">&times;</a>
-         {{message}}
-        </div><!-- end .alert -->
-        {% endfor %}
-      </div><!-- end col-md -->
-    </div><!-- end row -->
-        {% endif %}
-    {% endwith %}
-
-    {% block content %}{% endblock %}
-  </div>
-
-</div><!-- end container -->
+  {% block content %}{% endblock %}
+</div>
 
 {% include "footer.html" %}
 
 <!-- JavaScript at the bottom for fast page loading -->
-{% assets "js_all" %}
+{% assets "js_bottom" %}
     <script type="text/javascript" src="{{ ASSET_URL }}"></script>
 {% endassets %}
 {% block js %}{% endblock %}

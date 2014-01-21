@@ -17,7 +17,7 @@ You will be asked about your basic info (name, project name, app name, etc.). Th
 Features
 --------
 
-- Twitter Bootstrap 3 and Fontawesome 4 with starter templates
+- Twitter Foundation 5 and Fontawesome 4 with starter templates
 - Flask-SQLAlchemy with basic User model
 - Easy database migrations with Flask-Migrate
 - Flask-WTForms with login and registration forms
@@ -26,7 +26,7 @@ Features
 - Procfile for deploying to a PaaS (e.g. Heroku)
 - Flask-Testing, Flask-Webtest, nose, and Factory-Boy for testing (example tests included)
 - A simple ``manage.py`` script.
-- CSS and JS minification using Flask-Assets
+- CSS and JS minification plus .scss compilation using Flask-Assets and pyScss
 - Caching using Flask-Cache
 - Useful debug toolbar
 - Utilizes best practices: `Blueprints <http://flask.pocoo.org/docs/blueprints/>`_ and `Application Factory <http://flask.pocoo.org/docs/patterns/appfactories/>`_ patterns
