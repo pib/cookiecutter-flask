@@ -34,12 +34,12 @@ Features
 Screenshots
 -----------
 
-.. image:: https://www.dropbox.com/s/g00m8imtvg8kp9f/flask-cookiecutter.png
-    :target: https://www.dropbox.com/s/g00m8imtvg8kp9f/flask-cookiecutter.png
+.. image:: https://dl.dropboxusercontent.com/s/g00m8imtvg8kp9f/flask-cookiecutter.png
+    :target: https://dl.dropboxusercontent.com/s/g00m8imtvg8kp9f/flask-cookiecutter.png
     :alt: Home page
 
-.. image:: https://www.dropbox.com/s/nkfhktqdutejhkl/flask-cookiecutter-register.png
-    :target: https://www.dropbox.com/s/nkfhktqdutejhkl/flask-cookiecutter-register.png
+.. image:: https://dl.dropboxusercontent.com/s/nkfhktqdutejhkl/flask-cookiecutter-register.png
+    :target: https://dl.dropboxusercontent.com/s/nkfhktqdutejhkl/flask-cookiecutter-register.png
     :alt: Registration form
 
 
