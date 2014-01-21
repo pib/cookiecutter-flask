@@ -1,9 +1,11 @@
 {% raw %}
 {% extends "layout.html" %}
 {% block content %}
-<div class="panel">
-  <h1>Welcome {{ session.username }}</h1>
-  <h3>This is the members-only page.</h3>
+<div class="row">
+  <div class="panel callout large-12 columns">
+    <h1>Welcome {{ session.username }}</h1>
+    <h3>This is the members-only page.</h3>
+  </div>
 </div>
 {% endblock %}
 {% endraw%}

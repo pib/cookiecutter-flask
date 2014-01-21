@@ -18,13 +18,13 @@
       <ul class="right">
         <li><a href="{{ url_for('public.register') }}">Create account</a></li>
         <li class="has-form">
-          <form method="POST" class="navbar-form form-inline navbar-right" action="" role="login">
+          <form method="POST" action="" role="login">
             {{ form.hidden_tag() }}
             <div class="row collapse">
-              <div class="large-5 small-4 columns">{{ form.username(placeholder="Username") }}</div>
-              <div class="large-5 small-4 columns">{{ form.password(placeholder="Password") }}</div>
-              <div class="large-2 small-4 columns">
-                <button type="submit" class="button postfix">Log in</button>
+              <div class="small-5 columns">{{ form.username(placeholder="Username") }}</div>
+              <div class="small-5 columns">{{ form.password(placeholder="Password") }}</div>
+              <div class="small-2 columns">
+                <button type="submit" class="button expand">Log in</button>
               </div>
             </div>
       </form>

@@ -2,19 +2,21 @@
 {% extends "layout.html" %}
 {% block content %}
 <!-- Main panel for a primary marketing message or call to action -->
-<div class="panel">
-{% endraw %}
-  <h1>Welcome to {{ cookiecutter.project_name }}</h1>
-{% raw %}
-  <p>This is a starter Flask template. It includes Foundation 5, jQuery, Flask-SQLAlchemy, WTForms, and various testing utilities out of the box.</p>
-  <p><a href="https://github.com/pib/cookiecutter-flask-foundation" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div><!-- /.panel -->
+<div class="row">
+  <div class="panel callout large-12 columns">
+    {% endraw %}
+    <h1>Welcome to {{ cookiecutter.project_name }}</h1>
+    {% raw %}
+    <p>This is a starter Flask template. It includes Foundation 5, jQuery, Flask-SQLAlchemy, WTForms, and various testing utilities out of the box.</p>
+    <p><a href="https://github.com/pib/cookiecutter-flask-foundation" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+  </div><!-- /.panel -->
+</div>
 
 <div class="body-content row">
   <div class="large-4 columns">
     <h2><i class="fa fa-code"></i> Foundation 5</h2>
     <p>The most advanced responsive front-end framework in the world.</p>
-    <p><a class="btn btn-default" href="http://http://foundation.zurb.com//">Official website &raquo;</a></p>
+    <p><a class="btn btn-default" href="http://foundation.zurb.com/">Official website &raquo;</a></p>
   </div>
   <div class="large-4 columns">
     <h2><i class="fa fa-flask"></i> SQLAlchemy</h2>

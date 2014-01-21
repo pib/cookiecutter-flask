@@ -3,7 +3,7 @@ from flask.ext.assets import Bundle, Environment
 
 css = Bundle(
     "css/style.scss",
-    filters="pyscss",
+    filters="scss",
     output="public/css/common.css"
 )
 
@@ -14,7 +14,7 @@ js_top = Bundle(
 js = Bundle(
     "libs/jquery/jquery-1.10.2.min.js",
     "libs/fastclick/fastclick.js",
-    "libs/fastclick/placeholder.js",
+    "libs/placeholder/placeholder.js",
 
     # Foundation components, those which aren't used can be removed
     "libs/foundation5/js/foundation/foundation.js",
